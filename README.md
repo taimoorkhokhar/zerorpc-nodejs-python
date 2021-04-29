@@ -1,25 +1,15 @@
-# Simple Express / Node.js hello world app
+# Simple zerorpc/ Node.js python hello world app
 
-I needed a demo application.  Since then I've added little bits and pieces to expand.
+realtime communication using zerorpc between nodejs client and python server inside a docker container.
 
-Contains:
-
-  * A simple Express `Hello World!` on port 8000
-  * A Dockerfile to deploy with Docker locally or in the cloud
-  * Kubernetes yaml files for creating a service and a load balancer.
-
-# TBD 
-
-A better app.
-
-### Install
+### build
 
 ```
-npm install
+docker build -t node_app .
 ```
 
 ### Start
 
 ```
-npm start
+docker run -it  node_app
 ```
